@@ -1,3 +1,5 @@
+FlyClasses/
+!src/
 *.class
 
 # Package Files #
