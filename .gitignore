@@ -1,3 +1,4 @@
+# Ignore dirs/files
 bin/
 .settings/
 .git/
