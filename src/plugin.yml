@@ -3,7 +3,7 @@ main: ru.flydev.kartograf.FlyClasses
 version: 0.0.1
 
 commands:
-   basic:
+   frpg:
       description: This is a demo command.
       usage: /frpg
       permission: flyclasses.frpg

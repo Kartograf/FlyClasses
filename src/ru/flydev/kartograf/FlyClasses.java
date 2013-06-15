@@ -10,7 +10,7 @@ public class FlyClasses extends JavaPlugin {
 		public void onEnable(){
 			getLogger().info("Enable FlyClasses!");
 			
-			getCommand("basic").setExecutor(new FRpg(this));
+			getCommand("frpg").setExecutor(new FRpg(this));
 		}
 	 
 		public void onDisable(){

@@ -17,13 +17,13 @@ public class FRpg implements CommandExecutor {
 	@Override
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 		if (cmd.getName().equalsIgnoreCase("frpg")){ // If the player typed /basic then do the following...
-			sender.sendMessage("Yes!");
-			return true;
-		} else if (cmd.getName().equalsIgnoreCase("frpg")) {
 			if (!(sender instanceof Player)) {
 				sender.sendMessage("This command can only be run by a player.");
+				return true;
+			} else {
+				sender.sendMessage("This command run by a player.");
+				return true;
 			}
-			return true;
 		}
 		return false;
 	}
