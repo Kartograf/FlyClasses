@@ -1,11 +1,19 @@
 package ru.flydev.kartograf;
 
-public class FlyClasses {
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.plugin.java.JavaPlugin;
 
+import ru.flydev.kartograf.commands.FRpg;
 
-	public static void main(String[] args) {
-
-
-	}
-
+public class FlyClasses extends JavaPlugin {
+		 
+		public void onEnable(){
+			getLogger().info("Enable FlyClasses!");
+			
+			getCommand("basic").setExecutor(new FRpg(this));
+		}
+	 
+		public void onDisable(){
+			getLogger().info("Disable FlyClasses!");
+		}
 }
