@@ -3,6 +3,11 @@ main: ru.flydev.kartograf.FlyClasses
 version: 0.0.1
 
 commands:
+   fc:
+      description: This is a demo command.
+      usage: /fc
+      permission: flyclasses.fc
+      permission-message: You don't have permission.
    frpg:
       description: This is a demo command.
       usage: /frpg
